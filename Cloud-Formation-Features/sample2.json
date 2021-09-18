@@ -1,0 +1,20 @@
+{
+  "Resources": {
+    "Ec2Instance": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "InstanceType": "t2.micro",
+        "ImageId": "ami-43874721",
+        "Tags": [
+          {
+            "Key": "Name"
+            "Value": {
+                 "Fn:Join":[" ",["EC2", "Instance", "with", "Fn", "Join" ] ]
+             }
+          }
+        ]
+      }
+    }
+  }
+}
+

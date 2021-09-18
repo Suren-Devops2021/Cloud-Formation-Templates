@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+      stages {
+          stage("Update Stack"){
+	    steps {
+               sh "aws cloudformation update-stack --stack-name CD2 --template-body file://   --region 'us-east-1'"
+	       }
+	    }
+
+}
+}
+
+
