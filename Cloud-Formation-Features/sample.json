@@ -7,8 +7,8 @@
         "ImageId": "ami-087c17d1fe0178315",
         "Tags": [
           {
-            "Key": "Name22",
-            "Value": "A simple example"
+            "Key": "Name2",
+            "Value": "A single simple example"
           }
         ]
       }
