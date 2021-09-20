@@ -1,9 +1,9 @@
 pipeline {
     agent any
       stages {
-          stage("Update Stack"){
+          stage("CreateStack"){
 	    steps {
-               sh "aws cloudformation create-stack --stack-name CD3 --template-body file://   --region 'us-east-1'"
+               sh "aws cloudformation create-stack --stack-name CD3 --template-body file://sample.json   --region 'us-east-1'"
 	       }
 	    }
 
